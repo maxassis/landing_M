@@ -23,7 +23,7 @@ interface PlanCardProps {
   bestPlan: boolean;
   planType: "Basic" | "Essencial" | "Pro";
   colaboradores: number;
-  onColaboradoresChange?: (value: number) => void;
+  // onColaboradoresChange?: (value: number) => void;
 }
 
 export default function PlanCard({
@@ -34,7 +34,7 @@ export default function PlanCard({
   bestPlan = false,
   planType,
   colaboradores,
-  onColaboradoresChange,
+  // onColaboradoresChange,
 }: PlanCardProps) {
   const [localColaboradores, setLocalColaboradores] = useState(colaboradores);
   const [calculatedPrice, setCalculatedPrice] = useState(price);
