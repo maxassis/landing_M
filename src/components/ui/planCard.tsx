@@ -23,7 +23,7 @@ interface PlanCardProps {
   bestPlan: boolean;
   planType: "Basic" | "Essencial" | "Pro";
   colaboradores: number;
-  onColaboradoresChange: (value: number) => void;
+  onColaboradoresChange?: (value: number) => void;
 }
 
 export default function PlanCard({
@@ -45,9 +45,9 @@ export default function PlanCard({
   // };
 
   const handleLocalChange = (value: number) => {
-    const limitado = Math.max(0, Math.min(value, 100)); // Limita entre 0 e 100
+    const limitado = Math.max(0, Math.min(value, 100));
     setLocalColaboradores(limitado);
-    onColaboradoresChange(limitado);
+    // onColaboradoresChange(limitado);
   };
 
   useEffect(() => {

@@ -122,6 +122,7 @@ export default function Section6() {
   const [embla, setEmbla] = useState<CarouselApi | null>(null);
 
   // const handleColaboradoresChange = (value: number) => {
+  //   // console.log(value);
   // };
 
   return (
@@ -165,7 +166,7 @@ export default function Section6() {
                   benefitsIncluded={beneficiosBasicIncluidos}
                   benefitsNotIncluded={beneficiosBasicNaoIncluidos}
                   colaboradores={0}
-                  onColaboradoresChange={handleColaboradoresChange}
+                  // onColaboradoresChange={handleColaboradoresChange}
                 />
               </CarouselItem>
               <CarouselItem className="basis-full">
@@ -176,7 +177,7 @@ export default function Section6() {
                   benefitsIncluded={beneficiosEssecialIncluidos}
                   benefitsNotIncluded={beneficiosEssecialNaoIncluidos}
                   colaboradores={0}
-                  onColaboradoresChange={handleColaboradoresChange}
+                  // onColaboradoresChange={handleColaboradoresChange}
                 />
               </CarouselItem>
               <CarouselItem className="basis-full">
@@ -186,7 +187,7 @@ export default function Section6() {
                   price="319,01"
                   benefitsIncluded={beneficiosProIncluidos}
                   colaboradores={0}
-                  onColaboradoresChange={handleColaboradoresChange}
+                  // onColaboradoresChange={handleColaboradoresChange}
                 />
               </CarouselItem>
             </CarouselContent>
