@@ -216,7 +216,7 @@ export default function Section6() {
             benefitsIncluded={beneficiosBasicIncluidos}
             benefitsNotIncluded={beneficiosBasicNaoIncluidos}
             colaboradores={0}
-            onColaboradoresChange={handleColaboradoresChange}
+            // onColaboradoresChange={handleColaboradoresChange}
           />
           <PlanCard
             planType="Essencial"
@@ -225,7 +225,7 @@ export default function Section6() {
             benefitsIncluded={beneficiosEssecialIncluidos}
             benefitsNotIncluded={beneficiosEssecialNaoIncluidos}
             colaboradores={0}
-            onColaboradoresChange={handleColaboradoresChange}
+            // onColaboradoresChange={handleColaboradoresChange}
           />
           <PlanCard
             planType="Pro"
@@ -233,7 +233,7 @@ export default function Section6() {
             price="319,01"
             benefitsIncluded={beneficiosProIncluidos}
             colaboradores={0}
-            onColaboradoresChange={handleColaboradoresChange}
+            // onColaboradoresChange={handleColaboradoresChange}
           />
         </div>
       </div>
