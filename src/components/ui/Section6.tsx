@@ -121,8 +121,8 @@ const beneficiosProIncluidos = [
 export default function Section6() {
   const [embla, setEmbla] = useState<CarouselApi | null>(null);
 
-  const handleColaboradoresChange = (value: number) => {
-  };
+  // const handleColaboradoresChange = (value: number) => {
+  // };
 
   return (
     <div className="px-5 bg-white pt-5 pb-16 md:pb-24">

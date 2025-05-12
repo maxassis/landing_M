@@ -51,7 +51,7 @@ export default function PlanCard({
   };
 
   useEffect(() => {
-    let basePrice = parseFloat(price.replace(",", "."));
+    const basePrice = parseFloat(price.replace(",", "."));
     let finalPrice = basePrice;
 
     if (planType === "Basic") {
