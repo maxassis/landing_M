@@ -34,8 +34,8 @@ export default function PlanCard({
   bestPlan = false,
   planType,
   colaboradores,
-  // onColaboradoresChange,
-}: PlanCardProps) {
+}: // onColaboradoresChange,
+PlanCardProps) {
   const [localColaboradores, setLocalColaboradores] = useState(colaboradores);
   const [calculatedPrice, setCalculatedPrice] = useState(price);
 
@@ -71,7 +71,7 @@ export default function PlanCard({
       // finalPrice = basePrice;
       // if (localColaboradores > inclusosCargos) {
       //   const cargosAdicionais = localColaboradores - inclusosCargos;
-      //   finalPrice = basePrice + cargosAdicionais * 2.25; 
+      //   finalPrice = basePrice + cargosAdicionais * 2.25;
       // }
     }
 
@@ -107,17 +107,7 @@ export default function PlanCard({
         }`}
       >
         <h4 className="text-primary text-2xl font-bold">{planType}</h4>
-        {/* <span className="text-popover">{description}</span> */}
-        <div className="flex flex-row gap-2 mt-4 items-center">
-          <span className="text-popover">Número de colaboradores</span>
-          <input
-             max={100}
-            value={localColaboradores || ""}
-            onChange={(e) => handleLocalChange(Number(e.target.value))}
-            className="text-popover h-10 no-spinner flex-1 w-[150px] border rounded-md border-muted-foreground px-3 py-2 text-base ring-offset-background "
-            type="number"
-          />
-        </div>
+        {/* <span className="text-popover">hehehehehh</span> */}
 
         <div className="mt-8">
           <span className="text-popover block">A partir de</span>

@@ -14,16 +14,15 @@ export default function Section4() {
           id="solucao"
           className="h-auto max-w-[90rem] w-full mx-auto bg-white pb-12 px-8 md:px-16 pt-12 rounded-bl-4xl rounded-br-4xl p-8 md:py-16 md:pl-22 md:pr-80"
         >
-          <h3 className="text-primary text-xl">
-            GESTÃO PSICOSSOCIAL
+          <h3 className="text-primary text-xl">GESTÃO PSICOSSOCIAL</h3>
+          <h3 className="text-4xl text-popover mb-3 font-bold">
+            A Importância da Gestão Psicossocial
           </h3>
-          <h3 className="text-4xl text-popover mb-3 font-bold">A Importância da Gestão Psicossocial</h3>
           <p className="text-popover text-lg md:text-xl">
-            Conforme dados da OMS, mais de 60% das doenças ocupacionais têm
-            origem psicossocial. A nova NR01 torna obrigatório o mapeamento
-            desses riscos. Estar em conformidade protege vidas, fortalece a
-            cultura de saúde mental e evita passivos trabalhistas que podem
-            impactar financeiramente a empresa.
+            Conforme dados da OMS, torna obrigatório o mapeamento desses riscos.
+            Estar em conformidade protege vidas, fortalece a cultura de saúde
+            mental e evita passivos trabalhistas que podem impactar
+            financeiramente a empresa.
           </p>
         </div>
       </motion.div>

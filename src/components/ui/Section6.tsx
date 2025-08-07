@@ -29,7 +29,7 @@ import PlanCard from "./planCard";
 // }
 
 const beneficiosBasicIncluidos = [
-  { label: "Painel Fiter", tooltip: "Mais informações sobre Lorem Ipsum" },
+  { label: "Painel", tooltip: "Mais informações sobre Lorem Ipsum" },
   {
     label: "Inventário de riscos psicossociais",
     tooltip: "Detalhes sobre o recurso",
@@ -54,11 +54,11 @@ const beneficiosBasicIncluidos = [
 const beneficiosBasicNaoIncluidos = [
   { label: "Agente de IA (análise de score e recalibração dos riscos)" },
   { label: "Suporte com especialista" },
-  { label: "Palestra digital anual (conformidade NR)" },
+  { label: "Palestra digital anual" },
 ];
 
 const beneficiosEssecialIncluidos = [
-  { label: "Painel Fiter", tooltip: "Mais informações sobre Lorem Ipsum" },
+  { label: "Painel", tooltip: "Mais informações sobre Lorem Ipsum" },
   {
     label: "Inventário de riscos psicossociais",
     tooltip: "Detalhes sobre o recurso",
@@ -86,11 +86,11 @@ const beneficiosEssecialIncluidos = [
 
 const beneficiosEssecialNaoIncluidos = [
   { label: "Suporte com especialista" },
-  { label: "Palestra digital anual (conformidade NR)" },
+  { label: "Palestra digital anual" },
 ];
 
 const beneficiosProIncluidos = [
-  { label: "Painel Fiter", tooltip: "Mais informações sobre Lorem Ipsum" },
+  { label: "Painel", tooltip: "Mais informações sobre Lorem Ipsum" },
   {
     label: "Inventário de riscos psicossociais",
     tooltip: "Detalhes sobre o recurso",
@@ -115,7 +115,7 @@ const beneficiosProIncluidos = [
   },
   { label: "Suporte com chatbot", tooltip: "Detalhes sobre o recurso" },
   { label: "Suporte com especialista" },
-  { label: "Palestra digital anual (conformidade NR)" },
+  { label: "Palestra digital anual" },
 ];
 
 export default function Section6() {
@@ -150,7 +150,9 @@ export default function Section6() {
           </div>
         </div>
 
-        <h2 id="planos" className="text-center text-2xl text-primary mt-2">PLANOS</h2>
+        <h2 id="planos" className="text-center text-2xl text-primary mt-2">
+          PLANOS
+        </h2>
         <h3 className="text-center text-black text-4xl font-bold mb-6 md:mb-18">
           Escolha o plano ideal para sua empresa
         </h3>

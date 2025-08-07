@@ -58,7 +58,7 @@ export default function Header() {
       >
         <div className="items-center gap-1 h-full flex">
           <div className="w-[8.31rem] h-full flex items-center justify-center bg-primary text-white font-bold">
-            NR 01
+            Mx
           </div>
         </div>
 
@@ -142,7 +142,7 @@ export default function Header() {
         ref={mobileHeaderRef as RefObject<HTMLDivElement>}
         className="flex pb-1.5 px-1 flex-wrap items-center justify-around gap-1 lg:hidden fixed top-0 left-0 right-0 z-50 bg-[#1c388e80] shadow-md"
       >
-        <div className="font-bold m-0 p-0 w-full text-center">NR-01</div>
+        <div className="font-bold m-0 p-0 w-full text-center">Mx</div>
         <a
           href="#sobre"
           className="px-2.5 py-1 bg-primary text-white text-sm rounded-xl grid place-items-center"

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useEffect, useState } from 'react';
-import Lenis from '@studio-freight/lenis';
+import { useEffect, useState } from "react";
+import Lenis from "lenis";
 
 interface CustomLenisOptions {
   duration?: number;
@@ -24,7 +24,7 @@ export default function useLenis() {
       wheelMultiplier: 2,
       touchMultiplier: 2,
       lerp: 0.1,
-      gestureOrientation: 'vertical',
+      gestureOrientation: "vertical",
     };
 
     const lenisInstance = new Lenis(options as any);
@@ -38,11 +38,13 @@ export default function useLenis() {
     setLenis(lenisInstance);
 
     const getHeaderOffset = (): number => {
-      const desktopHeader = document.querySelector('header.lg\\:flex');
-      const mobileHeader = document.querySelector('header.lg\\:hidden');
+      const desktopHeader = document.querySelector("header.lg\\:flex");
+      const mobileHeader = document.querySelector("header.lg\\:hidden");
 
-      const desktopVisible = desktopHeader && getComputedStyle(desktopHeader).display !== 'none';
-      const mobileVisible = mobileHeader && getComputedStyle(mobileHeader).display !== 'none';
+      const desktopVisible =
+        desktopHeader && getComputedStyle(desktopHeader).display !== "none";
+      const mobileVisible =
+        mobileHeader && getComputedStyle(mobileHeader).display !== "none";
 
       if (desktopVisible && desktopHeader) return desktopHeader.clientHeight;
       if (mobileVisible && mobileHeader) return mobileHeader.clientHeight;
@@ -56,12 +58,12 @@ export default function useLenis() {
 
       if (anchorElement) {
         e.preventDefault();
-        const href = anchorElement.getAttribute('href');
+        const href = anchorElement.getAttribute("href");
         if (!href) return;
 
         const offset = -getHeaderOffset();
 
-        if (href === '#') {
+        if (href === "#") {
           lenisInstance.scrollTo(0, { offset });
           return;
         }
@@ -85,15 +87,15 @@ export default function useLenis() {
       }
     };
 
-    document.addEventListener('click', handleAnchorClick);
-    window.addEventListener('hashchange', handleHashChange);
+    document.addEventListener("click", handleAnchorClick);
+    window.addEventListener("hashchange", handleHashChange);
 
     // Initial scroll if URL has hash
     if (window.location.hash) handleHashChange();
 
     return () => {
-      document.removeEventListener('click', handleAnchorClick);
-      window.removeEventListener('hashchange', handleHashChange);
+      document.removeEventListener("click", handleAnchorClick);
+      window.removeEventListener("hashchange", handleHashChange);
       lenisInstance.destroy();
     };
   }, []);

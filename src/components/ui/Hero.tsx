@@ -11,7 +11,9 @@ export default function Hero() {
   const handleScrollToPlanos = () => {
     const target = document.querySelector("#planos");
     if (target && lenis) {
-      const header = document.querySelector("header.lg\\:flex") || document.querySelector("header.lg\\:hidden");
+      const header =
+        document.querySelector("header.lg\\:flex") ||
+        document.querySelector("header.lg\\:hidden");
       const offset = header ? -header.clientHeight : 0;
       lenis.scrollTo(target as HTMLElement, { offset });
     }
@@ -28,8 +30,7 @@ export default function Hero() {
         <div className="h-auto lg:h-[44.8rem] max-w-[90rem] w-full mx-auto rounded-4xl overflow bg-primary grid grid-cols-1 md:grid-cols-2 ">
           <div className="p-8 lg:p-16">
             <h1 className="text-4xl font-bold mb-6 md:text-5xl">
-              Conformidade com a NR01: Inteligência Artificial e Saúde Mental
-              Integradas
+              Inteligência Artificial e Saúde Mental Integradas
             </h1>
 
             <p className="text-[1.12rem]">

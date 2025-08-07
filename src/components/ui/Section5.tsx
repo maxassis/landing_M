@@ -12,7 +12,7 @@ import CardDepoiment from "@/components/ui/CardDepoiment";
 
 const depoiments = [
   {
-    text: "Com o Agente NR01, garantimos conformidade e priorizamos a saúde mental no nosso ambiente de trabalho.",
+    text: "Com o Agente, garantimos conformidade e priorizamos a saúde mental no nosso ambiente de trabalho.",
     stars: 5,
   },
   {
@@ -20,7 +20,7 @@ const depoiments = [
     stars: 5,
   },
   {
-    text: "A precisão com que o sistema da Fiter identifica os riscos e já sugere as ações certas nos impressionou. Ele nos mostra as causas, os efeitos e o que fazer com base em dados reais. É como ter um consultor 24h por dia.",
+    text: "A precisão com que o sistema  identifica os riscos e já sugere as ações certas nos impressionou. Ele nos mostra as causas, os efeitos e o que fazer com base em dados reais. É como ter um consultor 24h por dia.",
     stars: 5,
   },
   {
@@ -28,7 +28,7 @@ const depoiments = [
     stars: 5,
   },
   {
-    text: "A inteligência artificial da Fiter entregou um diagnóstico riquíssimo para a nossa empresa. Com ela, criamos planos de ação assertivos e realmente alinhados aos riscos identificados em cada área.",
+    text: "A inteligência artificial entregou um diagnóstico riquíssimo para a nossa empresa. Com ela, criamos planos de ação assertivos e realmente alinhados aos riscos identificados em cada área.",
     stars: 5,
   },
 ];
@@ -51,10 +51,7 @@ export default function Section5() {
           >
             <CarouselContent className="-ml-1">
               {depoiments.map((depoiment, index) => (
-                <CarouselItem
-                  key={index}
-                  className="md:basis-1/2 lg:basis-1/4"
-                >
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
                   <CardDepoiment
                     text={depoiment.text}
                     stars={depoiment.stars}
