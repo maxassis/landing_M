@@ -39,17 +39,6 @@ PlanCardProps) {
   const [localColaboradores, setLocalColaboradores] = useState(colaboradores);
   const [calculatedPrice, setCalculatedPrice] = useState(price);
 
-  // const handleLocalChange = (value: number) => {
-  //   setLocalColaboradores(value);
-  //   onColaboradoresChange(value);
-  // };
-
-  const handleLocalChange = (value: number) => {
-    const limitado = Math.max(0, Math.min(value, 100));
-    setLocalColaboradores(limitado);
-    // onColaboradoresChange(limitado);
-  };
-
   useEffect(() => {
     const basePrice = parseFloat(price.replace(",", "."));
     let finalPrice = basePrice;
